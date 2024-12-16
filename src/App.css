@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #f9e7d3;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.footer-lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
