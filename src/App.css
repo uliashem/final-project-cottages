@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-h1, .link, h2, .filter, h3, h4 {
+h1, .link, h2, .filter, h3, h4, .change {
   font-family: "Montserrat", serif;
   color: #27211e;
 }
@@ -190,6 +190,34 @@ p {
  height: 75vh;
 }
 
+.section1 {
+  background-color: #f9e7d3;
+}
+
+.btnStore {
+  padding: 10px;
+  background-color: #f9e7d3;
+  border: 2px solid #27211e;
+  border-radius: 10px;
+}
+
+.btnStore:hover {
+  background-color: #27211e;
+}
+
+.linkStore {
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #27211e;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+}
+
+.linkStore:hover {
+  color: #ffffff;
+}
+
 .header1 p, .section p {
   font-family: "Montserrat", serif;
   color: #27211e;
@@ -330,6 +358,79 @@ form {
   border: solid 1px #ffffff;
 }
 
+.store {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.block {
+  padding: 100px 20px;
+}
+
+.filters {
+  width: 25%;
+  padding: 100px 20px;
+}
+
+.itemimg {
+  width: 100%;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 25%;
+  padding: 2%;
+}
+
+.cartIcon {
+  width: 40px;
+  padding: 20px;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+}
+
+.categoryButtonSelected {
+  background-color: rgb(227, 225, 225);
+}
+
+.categoryButton:hover {
+  background-color: #f9e7d3;
+}
+
+.deleteIcon {
+  width: 20px;
+}
+
+.btnItem {
+  width: 60%;
+  background-color: #f9e7d3;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.changebtn {
+  margin-top: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.change {
+  font-size: 20px;
+}
+
 @media all and (max-width: 1050px) {
   .header1 p {
     font-size: 14px;
@@ -366,6 +467,11 @@ form {
   form {
     width: 90%;
   }
+
+  .article {
+    width: 35%;
+    padding: 5%;
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -377,6 +483,10 @@ form {
 
   .section p {
     padding: 20px;
+  }
+
+  .article {
+    width: 50%;
   }
 }
 
@@ -409,6 +519,14 @@ form {
 
   .filter {
     margin-bottom: 30px;
+  }
+
+  .btnItem {
+    width: 100%;
+  }
+
+  .link {
+    padding: 10px 20px;
   }
 }
 
@@ -633,7 +751,16 @@ form {
     width: 40%;
   }
 
+  .filters {
+    width: 40%;
+  }
+
+   .article {
+    width: 100%;
+  }
+  
 }
+
 
 @media all and (max-width: 600px) {
 
@@ -719,5 +846,23 @@ form {
 
   #booking {
     padding: 50px 20px;
+  }
+
+  .article {
+    width: 90%;
+  }
+
+  .store {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+
+  .block {
+    width: 80%;
   }
 }
